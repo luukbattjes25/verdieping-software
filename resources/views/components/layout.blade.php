@@ -17,19 +17,25 @@
             <ul class="flex flex-col">
                 <x-nav-link>todos</x-nav-link>
                 <x-nav-link>completed</x-nav-link>
-                <x-nav-link>completed</x-nav-link>
-                <x-nav-link>completed</x-nav-link>
             </ul>
         </div>
 
         {{-- main --}}
         <div class="bg-orange-300 flex w-full overflow-auto justify-center">
-            <div>
-                <div>
-                    <h1 class="text-center">heading</h1>
+            <div class="bg-green-200">
+                <div class="m-3 bg-white">
+                    <h1 class="text-center p-3">{{ $heading }}</h1>
+                </div>
+                <div class="m-3 flex align-middle">
+                    <form action="">
+                        <input type="text">
+                    </form>
+                </div>
+                <div class="flex align-middle">
+                    {{ $todo }}
                 </div>
             </div>
-        </div>
+        </div>     
     </div>
 </body>
 

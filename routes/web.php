@@ -14,4 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function() {
+    return view('/todos');
+});
+
+Route::get('/completed', function() {
+    return view('/completed');
+});
+
 Route::get('/', [TodoController::class, 'index']);
