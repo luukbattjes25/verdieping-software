@@ -11,7 +11,8 @@
 
 Voor mijn keuzedeel verdieping software heb ik een todo website gemaakt.
 De website spreekt voor zich.
-### functionaliteiten
+
+## functionaliteiten
     1. Todo aanmaken
     2. Todo bewerken
     3. Todo verwijderen
