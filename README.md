@@ -17,12 +17,13 @@
 ## Setup
 -   Kloon de repository: https://github.com/luukbattjes25/verdieping-software.git
 -   Kopieer het .env bestand met het commando "cp .env.example .env"
--   DB_CONNECTION: het type database (mysql, pgsql, sqlite, sqlsrv)
-    DB_HOST: de hostnaam van je database, gewoonlijk 127.0.0.1
-    DB_PORT: de poort waarop je database draait, standaard is dit 3306 voor MySQL
-    DB_DATABASE: de naam van je database
-    DB_USERNAME: je databasegebruikersnaam
-    DB_PASSWORD: je database wachtwoord
+    - DB_CONNECTION: het type database (mysql, pgsql, sqlite, sqlsrv)
+    - DB_HOST: de hostnaam van je database, gewoonlijk 127.0.0.1
+    - DB_PORT: de poort waarop je database draait, standaard is dit 3306 voor MySQL
+    - DB_DATABASE: de naam van je database
+    - DB_USERNAME: je databasegebruikersnaam
+    - DB_PASSWORD: je database wachtwoord
+
 -   Voer het commando "php artisan migrate" uit om de database aan te maken.
 -   Start een development server met het commando "php artisan serve".
 -   Open de server op "localhost:8000".
