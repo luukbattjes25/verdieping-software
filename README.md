@@ -9,21 +9,28 @@
 
 # Verdieping software
 
+Voor mijn keuzedeel verdieping software heb ik een todo website gemaakt.
+De website spreekt voor zich.
+### functionaliteiten
+    1. Todo aanmaken
+    2. Todo bewerken
+    3. Todo verwijderen
+    4. Todos bekijken.
+
 ## Benodigheden
 - [Composer](https://getcomposer.org/)
 - [MySQL](https://www.mysql.com/)
 - [NodeJS](https://nodejs.org/en)
 
 ## Setup
--   Kloon de repository: https://github.com/luukbattjes25/verdieping-software.git
+-   Clone de repository met "git clone https://github.com/luukbattjes25/verdieping-software.git"
 -   Kopieer het .env bestand met het commando "cp .env.example .env"
     - DB_CONNECTION: het type database (mysql, pgsql, sqlite, sqlsrv)
     - DB_HOST: de hostnaam van je database, gewoonlijk 127.0.0.1
     - DB_PORT: de poort waarop je database draait, standaard is dit 3306 voor MySQL
     - DB_DATABASE: de naam van je database
     - DB_USERNAME: je databasegebruikersnaam
-    - DB_PASSWORD: je database wachtwoord
-
+    - DB_PASSWORD: je database wachtwoord   
 -   Voer het commando "php artisan migrate" uit om de database aan te maken.
 -   Start een development server met het commando "php artisan serve".
 -   Open de server op "localhost:8000".
