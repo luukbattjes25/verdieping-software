@@ -14,7 +14,9 @@ return new class extends Migration
         Schema::create('todo_table', function (Blueprint $table) {
             $table->id();
             $table->string('todo');
-            $table->boolean('completed');
+            $table->string('description');
+            $table->integer('priority')->default(0);
+            $table->boolean('completed')->default(false);
             $table->timestamps();
         });
     }

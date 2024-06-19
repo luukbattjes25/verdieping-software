@@ -14,12 +14,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function() {
-    return view('/todos');
-});
+Route::get('/', TodoController::class . '@index')->name('index');
 
-Route::get('/completed', function() {
-    return view('/completed');
-});
+Route::get('/completed', TodoController::class . '@completed')->name('completed');
 
-Route::get('/', [TodoController::class, 'index']);
+Route::get('/complete/{todo}', TodoController::class . '@complete')->name('create');
+
+Route::get('/edit/{todo}', TodoController::class . '@edit')->name('edit');
+
+Route::post('/update/{todo}', TodoController::class . '@update')->name('update');
+
+Route::get('/delete/{todo}', TodoController::class . '@delete')->name('delete');
+
+Route::get('/create', TodoController::class . '@create')->name('create');
+
+Route::post('/store', TodoController::class . '@store')->name('store');
+

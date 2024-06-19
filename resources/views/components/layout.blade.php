@@ -8,35 +8,8 @@
     @vite(['resources/js/app.js'])
 </head>
 
-<body class="h-screen w-screen overflow-hidden">
-    <div id="app" class="h-screen w-screen bg-red-300 flex overflow-hidden">
-
-        {{-- sidebar --}}
-        <div class="bg-green-300 flex flex-col w-96 overflow-auto">
-            <h1 class="p-3 bg-gray-300 font-extrabold text-center">Todo-Website</h1>
-            <ul class="flex flex-col">
-                <x-nav-link>todos</x-nav-link>
-                <x-nav-link>completed</x-nav-link>
-            </ul>
-        </div>
-
-        {{-- main --}}
-        <div class="bg-orange-300 flex w-full overflow-auto justify-center">
-            <div class="bg-green-200">
-                <div class="m-3 bg-white">
-                    <h1 class="text-center p-3">{{ $heading }}</h1>
-                </div>
-                <div class="m-3 flex align-middle">
-                    <form action="">
-                        <input type="text">
-                    </form>
-                </div>
-                <div class="flex align-middle">
-                    {{ $todo }}
-                </div>
-            </div>
-        </div>     
-    </div>
+<body class="h-screen w-screen bg-green-100">
+    {{ $slot }}
 </body>
 
 </html>
