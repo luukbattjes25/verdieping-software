@@ -13,10 +13,10 @@ Voor mijn keuzedeel verdieping software heb ik een todo website gemaakt.
 De website spreekt voor zich.
 
 ## functionaliteiten
-    1. Todo aanmaken
-    2. Todo bewerken
-    3. Todo verwijderen
-    4. Todos bekijken.
+- Todo aanmaken
+- Todo bewerken
+- Todo verwijderen
+- Todos bekijken.
 
 ## Benodigheden
 - [Composer](https://getcomposer.org/)
@@ -24,15 +24,28 @@ De website spreekt voor zich.
 - [NodeJS](https://nodejs.org/en)
 
 ## Setup
--   Clone de repository met "git clone https://github.com/luukbattjes25/verdieping-software.git"
--   Kopieer het .env bestand met het commando "cp .env.example .env"
+1. Clone de repository met: 
+```bash
+git clone https://github.com/luukbattjes25/verdieping-software.git
+```
+2. Kopieer het .env bestand met het commando: 
+```bash
+cp .env.example .env
+```
+3. Pas de volgende database gegevens correct aan:
     - DB_CONNECTION: het type database (mysql, pgsql, sqlite, sqlsrv)
     - DB_HOST: de hostnaam van je database, gewoonlijk 127.0.0.1
     - DB_PORT: de poort waarop je database draait, standaard is dit 3306 voor MySQL
-    - DB_DATABASE: de naam van je database
+    -  DB_DATABASE: de naam van je database
     - DB_USERNAME: je databasegebruikersnaam
     - DB_PASSWORD: je database wachtwoord   
--   Voer het commando "php artisan migrate" uit om de database aan te maken.
--   Start een development server met het commando "php artisan serve".
--   Open de server op "localhost:8000".
+4. Voer het volgende commando uit om de database aan te maken.
+```bash
+php artisan migrate
+```
+5. Start een development server met het volgende commando.
+```bash
+php artisan serve
+```
+6. Open de server op "localhost:8000".
 
